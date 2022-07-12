@@ -1,4 +1,5 @@
 #include	<stdio.h>
+#include	<math.h>
 
 int myRoot(double x) // x の平方根を返す関数。x >= 0 ではないとき exit(1) とする。 
 {
@@ -14,11 +15,11 @@ int main(void)
 {
   int i;
   double *x = (double *)malloc(sizeof(double) * 100);
-
-  while( i <= 100 ){
-    x[i] = myRoot((double)i);
-    i++;
-  }
+	
+  	while( i <= 100 ){
+    	x[i] = myRoot((double)i);
+    	i++;
+  	}
 
   //以下は確認用(このままで良い)
 	printf("x[0]=%f\n", x[0]);
